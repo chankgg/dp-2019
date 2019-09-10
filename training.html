@@ -7,19 +7,31 @@
         h1{margin-left: 0px;}
         h2{margin-left: 40px;}
         h3{margin-left: 80px;}
-
+        h2{
+            color: black
+        }
         h1{
             color: red;
             font-size: 20px;
             margin-left: 10px;
         }
+        li{
+            color: blue;
+        }
+        .class_name{
+            color: green;
+        }
+        #id_name{
+            color: pink;
+        }
         </style>
+        <link rel="stylesheet" type="text/css" href="default.css"> />
     </head>
     <body>
         <a href="index.html">HTML연습</a>
         <h1>제목1</h1>
         <p>아시아에서 가운데 있는</p>
-        <h2>서울</h2>
+        <h2 style="color: violet">서울</h2>
         <h3>영등포구</h3>
         <h3>마포구</h3>
         <h3>중량구</h3>
@@ -38,8 +50,8 @@
         <a href="http://www.google.com" target="_blank">구글로 이동하기</a>
         <ul>
             <li>설탕 100g</li>
-            <li>소금 100g</li>
-            <li>물 100ml</li>
+            <li class="id_name">소금 100g</li>
+            <li class="class_name">물 100ml</li>
         </ul>
         <ol>
             <li>물을 끓인다</li>
@@ -72,6 +84,43 @@
         H<sub>2</sub>o
 
         <!-- 절대주소 상대주소 -->
-        <img src="images/dog.jpg">
+        <img src="images/dog.jpg" width="100px">
+
+        <!-- table 도표 -->
+        <!-- table, tr, tb -->
+        <style>
+            table, tr, td{border: solid 1px black}
+        </style>
+        <table summary="요약 내용">
+            <caption>[표1] 표 제목</caption>
+            <!-- thead, tbody, tfoot -->
+            <thead>
+        <tr>
+                <th>제목1</th>
+                <th>제목2</th>
+                <th>제목3</th>
+                <th>제목4</th>
+                <th>제목5</th>
+        </tr>
+            </thead>
+            <tr>
+            <td colspan="2">1</td>
+            <td rowspan="2">2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        </table>
+
+        <!-- div 공간분할, span 공간분할 -->
+        <!-- 의미없이 쓰기 좋은 태그 -->
+        <div>블록형</div>
+        <span>인라인형</span>
+
     </body>
 </html>
