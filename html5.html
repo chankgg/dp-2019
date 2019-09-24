@@ -2,8 +2,10 @@
 <html>
     <head>
         <title>HTML5</title>
+        <meta charset="utf-8"/>
     </head>
     <body>
+            <a href="index.html">index</a>
         <header>머릿말</header>
         <div>
             <nav>네비게이션</nav>
@@ -21,7 +23,7 @@
             height: 150px;
         }
         </style>
-        <canvas id="my Canvas"></canvas>
+        <canvas id="myCanvas"></canvas>
     </body>
     <script>
             var canvas = document.getElementById("myCanvas"); //myCanvas라는 이름의 canvas element를 받아옵니다.
@@ -49,4 +51,10 @@
             ctx.arc(240, 65, 5, 0, Math.PI * 2, true);  // Right eye
             ctx.stroke();
             </script>
+            <audio controls autoplay>
+                <source src="./media/araragi-san!_ncgyber.mp3" type="audio/mpeg">
+            </audio>
+            <video controls autoplay>
+            <source src="./media/Film Strip - 5129.mp4" type="video/mp4">
+            </video>
 </html>
