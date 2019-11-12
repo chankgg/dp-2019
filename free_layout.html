@@ -4,15 +4,137 @@
         <title>free_layout</title>
         <meta charset="utf-8"/>
         <style>
+        #wrap{
+            margin: 0px 0px 90px 90px;
+        }
+        header{
+            background-color: #ffffff;
+            color: black;
+            padding: 14px 41px;
+        }
+        nav>ul>li{
+            float: left;
+            list-style: none;
+            padding-left: 45px;
+            padding-right: 45px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            opacity: 85%;
+        }
+        header>nav{
+            display:table;
+            float: right;
+        }
+        header>nav>ul{
+            margin: 5px;
+        }
         #main_visual{
             padding-top: 100px;
             padding-bottom: 100px;
-            height: 400px;
-            background-image:url("images/apple main image 1.jpg");
+            margin-top: 10px;
+            height: 620px;
+            background-image: url("images/apple main image 1.jpg");
             background-size: contain;
             background-repeat: no-repeat;
-            background-color: black;
-            background-position: 50% 50%;
+            background-color:#ffffff;
+            background-position: 0% 50%;
+            color: #4a86b5;
+        }
+         #main_visual div:nth-child(1){
+              font-size: 22px;
+              position: relative;
+              top: 678px;
+              left: 927px;
+         }
+         #main_visual div:nth-child(2){
+              font-size: 22px;
+              position: relative;
+              top: 652px;
+              left: 1080px;
+         }
+         #main_visual_2{
+            padding-top: 403px;
+            margin-top: 10px;
+            background-image: url("images/apple main image 2.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: relative;
+            top: -830px;
+            left: 1174px;
+            opacity: 45%;
+         }
+         #main_visual_3{
+            padding-top: 403px;
+            margin-top: 11px;
+            background-image: url("images/apple main image 3.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: relative;
+            top: -828px;
+            left: 1174px;
+            opacity: 45%;
+         }
+         #section_1{
+            padding-top: 404px;
+            margin-top: 10px;
+            background-image: url("images/iphone xr black.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: relative;
+            top: -800px;
+         }
+         #section_1 h1{
+             float: left;
+         }
+         #section_2{
+            padding-top: 404px;
+            margin-top: 20px;
+            background-image: url("images/apple watch black.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: relative;
+            top: -1204px;
+            left: 415px;
+         }
+         #section_2 h1{
+             float: left;
+         }
+         #section_3{
+            padding-top: 350px;
+            margin-top: 20px;
+            background-image: url("images/macbook air.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: relative;
+            top: -1604px;
+            left: 840px;
+         }
+         #section_3 h1{
+             float: left;
+         }
+         #section_4{
+            padding-top: 380px;
+            margin-top: 40px;
+            background-image: url("images/ipad.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: relative;
+            top: -2004px;
+            left: 1381px;
+         }
+         #section_4 h1{
+             float: left;
+         }
+        footer{
+                background-color: #e2c5ed;
+                color: #ccc;
+                padding: 30px;
+                margin-top: 10px;
+            }
+        .clear{
+            clear: both;
+            height: 0px;
+            overflow: hidden;
         }
         </style>
     </head>
@@ -20,9 +142,10 @@
         <a href="index.html">index</a>
         <div id=wrap>
         <header>
-            <h1>
+            <a href="#">
                 <img src="images/apple.png">
-            </h1>
+            </a>
+            <nav>
             <ul>
                 <li>Mac</li>
                 <li>iPad</li>
@@ -33,9 +156,25 @@
                 <li>Support</li>
                 <div class="clear"></div>
                 </ul>
+            </nav>
             </header>
             <div id="main_visual">
-
+                <div>Learn more></div>
+                <div>Buy></div>
+            </div>
+            <div id="main_visual_2"></div>
+            <div id="main_visual_3"></div>
+            <div id="section_1">
+                <h1>iPhone XR</h1>
+            </div>
+            <div id="section_2">
+                <h1>Apple Watch 4</h1>
+            </div>
+            <div id="section_3">
+                <h1>Macbook Air</h1>
+            </div>
+            <div id="section_4">
+                <h1>iPad Pro</h1>
             </div>
             <footer></footer>
     </div>
