@@ -6,33 +6,54 @@
         <style>
         #wrap{
             margin: 0px 0px 90px 90px;
+            min-width: 1200px;
+            max-width: 1920px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 4px;
         }
         header{
             background-color: #ffffff;
             color: black;
-            padding: 14px 41px;
+            padding: 14px 0px 45px;
+        }
+        #apple_logo{
+            opacity: 80%;
+            position: relative;
+            top: 8px;
+            left: 10px;
         }
         nav>ul>li{
             float: left;
             list-style: none;
-            padding-left: 45px;
-            padding-right: 45px;
+            padding-left: 32px;
+            padding-right: 32px;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 20px;
-            opacity: 85%;
+            opacity: 80%;
+            position: relative;
+            left: 20px;
         }
         header>nav{
-            display:table;
+            display: table;
             float: right;
+            position: relative;
+            top: -28px;
         }
         header>nav>ul{
             margin: 5px;
         }
+        #apple_bag{
+            position: relative;
+            bottom: 6px;
+        }
         #main_visual{
+            background-position: 50% 50%;
+        }
+        #main_visual_1{
             padding-top: 100px;
             padding-bottom: 100px;
-            margin-top: 10px;
-            height: 620px;
+            height: 660px;
             background-image: url("images/apple main image 1.jpg");
             background-size: contain;
             background-repeat: no-repeat;
@@ -40,109 +61,131 @@
             background-position: 0% 50%;
             color: #4a86b5;
         }
-         #main_visual div:nth-child(1){
+         #main_visual_1 div:nth-child(1){
               font-size: 22px;
               position: relative;
-              top: 678px;
-              left: 927px;
+              top: 714px;
+              left: 977px;
          }
-         #main_visual div:nth-child(2){
+         #main_visual_1 div:nth-child(2){
               font-size: 22px;
               position: relative;
-              top: 652px;
-              left: 1080px;
+              top: 687px;
+              left: 1130px;
          }
          #main_visual_2{
-            padding-top: 403px;
+            padding-top: 423px;
             margin-top: 10px;
             background-image: url("images/apple main image 2.jpg");
             background-size: contain;
             background-repeat: no-repeat;
             position: relative;
-            top: -830px;
-            left: 1174px;
+            top: -870px;
+            left: 1230px;
             opacity: 45%;
          }
          #main_visual_3{
-            padding-top: 403px;
+            padding-top: 423px;
             margin-top: 11px;
             background-image: url("images/apple main image 3.jpg");
             background-size: contain;
             background-repeat: no-repeat;
             position: relative;
-            top: -828px;
-            left: 1174px;
+            top: -867px;
+            left: 1230px;
             opacity: 45%;
          }
-         #section_1{
-            padding-top: 404px;
-            margin-top: 10px;
-            background-image: url("images/iphone xr black.png");
+         #body{
             background-size: contain;
-            background-repeat: no-repeat;
-            position: relative;
-            top: -800px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+            float: left;
          }
-         #section_1 div{
+         #body>section{
+             width: 1828px;
+             height: 405px;
+             background-color: #dacdd8;
              float: left;
-             font-family: Arial, Helvetica, sans-serif;
-             font-size: 22px;
-             opacity: 80%;
+             position: relative;
+             bottom: 854px;
          }
-         #section_2{
-            padding-top: 404px;
-            margin-top: 20px;
-            background-image: url("images/apple watch black.jpg");
-            background-size: contain;
-            background-repeat: no-repeat;
+         #body>section>div{
+             font-size: 75px;
+             font-weight: bold;
+             letter-spacing: 2px;
+             color: #ffffff;
+             position: relative;
+             left: 50px;
+             top: 60px;
+         }
+         #body>section>h3{
+             color: white;
+             position: relative;
+             left: 50px;
+             top: 100px;
+             font-size: 32px;
+         }
+         #body>ul{
+            padding: 0px;
+            margin: 0px;
             position: relative;
-            top: -1204px;
-            left: 415px;
+            bottom: 770px;
          }
-         #section_2 div{
-             float: left;
-             font-family: Arial, Helvetica, sans-serif;
-             font-size: 22px;
-             opacity: 80%;
+         #body>ul>li{
+            float: left;
+            list-style: none;
+            width: 25%;
          }
-         #section_3{
-            padding-top: 350px;
-            margin-top: 20px;
-            background-image: url("images/macbook air.jpg");
-            background-size: contain;
-            background-repeat: no-repeat;
+         #body img{
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+        }
+        #body>ul>li:nth-child(2){
             position: relative;
-            top: -1604px;
-            left: 840px;
-         }
-         #section_3 div{
-             float: left;
-             font-family: Arial, Helvetica, sans-serif;
-             font-size: 22px;
-             opacity: 80%;
-         }
-         #section_4{
-            padding-top: 380px;
-            margin-top: 40px;
-            background-image: url("images/ipad.png");
-            background-size: contain;
-            background-repeat: no-repeat;
+            right: 30px;
+        }
+        #body>ul>li:nth-child(3){
             position: relative;
-            top: -2004px;
-            left: 1381px;
+            right: 25px;
+        }
+        #body>ul>li>div{
+             font-size: 25px;
+             line-height: 50px;
+             text-align: center;
          }
-         #section_4 div{
-             float: left;
-             font-family: Arial, Helvetica, sans-serif;
-             font-size: 22px;
-             opacity: 80%;
-         }
+        #main_text_1{
+            margin: 0;
+            font-size: 150px;
+            position: relative;
+        }
         footer{
-                background-color: #e2c5ed;
-                color: #ccc;
-                padding: 30px;
-                margin-top: 10px;
+            width: 1808px;
+            height: 90px;
+            background-color: #dacdd8;
+            padding: 10px;
+            margin-top: 10px;
+            float: left;
             }
+        #footer_center>ul>li{
+            color: white;
+            font-size: 18px;
+            list-style: none;
+            float: left;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-right: solid 2px white;
+        }
+        #footer_center li:nth-child(5){
+            border: none;
+        }
+        #footer_center div{
+            color: white;
+            position: relative;
+            top: 30px;
+            right: 583px;
+        }
         .clear{
             clear: both;
             height: 0px;
@@ -154,9 +197,11 @@
         <a href="index.html">index</a>
         <div id=wrap>
         <header>
-            <a href="#">
+            <div id="apple_logo">
+            <a href="index.html">
                 <img src="images/apple.png">
             </a>
+        </div>
             <nav>
             <ul>
                 <li>Mac</li>
@@ -166,29 +211,69 @@
                 <li>TV</li>
                 <li>Music</li>
                 <li>Support</li>
+                <li>
+                    <img src="images/apple_glass.png">
+                </li>
+                <li id="apple_bag">
+                    <img src="images/apple_bag.png">
+                </li>
                 <div class="clear"></div>
                 </ul>
             </nav>
             </header>
             <div id="main_visual">
+            <div id="main_visual_1">
                 <div>Learn more></div>
                 <div>Buy></div>
             </div>
             <div id="main_visual_2"></div>
             <div id="main_visual_3"></div>
-            <div id="section_1">
-                <div>iPhone XR</div>
             </div>
-            <div id="section_2">
-                <div>Apple Watch 4</div>
-            </div>
-            <div id="section_3">
-                <div>Macbook Air</div>
-            </div>
-            <div id="section_4">
-                <div>iPad Pro</div>
-            </div>
-            <footer></footer>
+            <div id="body">
+                <section>
+                    <h3>
+                        2019
+                    </h3>
+                    <div>
+                        Hot Devices
+                    </div>
+                </section>
+                <ul>
+            <li>
+                <img src="images/iphone xr black.png">
+            </li>
+            <li>
+                <img src="images/apple watch black.jpg">
+            </li>
+            <li>
+                <img src="images/macbook air.jpg">
+            </li>
+            <li>
+                <img src="images/ipad.png">
+            </li>
+            <div class="clear"></div>
+                </ul>
+        </div>
+        <div id="main_text_1">
+            2019 Apple line up
+        </div>
+            <footer>
+                <div id="footer_center">
+                    <ul>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Use</li>
+                        <li>Sales and Refunds</li>
+                        <li>Legal</li>
+                        <li>Site Map</li>
+                    </ul>
+                    <div>
+                        Copyright © 2019 Apple Inc. All rights reserved.
+                    </div>
+                    <div>
+                        More ways to shop: Find an Apple Store or other retailer near you. Or call 1-800-MY-APPLE.
+                    </div>
+                </div>
+            </footer>
     </div>
     </body>
 </html>
