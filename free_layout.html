@@ -11,9 +11,13 @@
             margin-left: auto;
             margin-right: auto;
             padding-left: 4px;
+            background-color: #f1f1f1;
+        }
+        body{
+            background-color: #f1f1f1;
         }
         header{
-            background-color: #ffffff;
+            background-color: #f1f1f1;
             color: black;
             padding: 14px 0px 45px;
         }
@@ -29,10 +33,26 @@
             padding-left: 32px;
             padding-right: 32px;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
+            font-size: 21px;
             opacity: 80%;
             position: relative;
             left: 20px;
+            opacity: 70%;
+        }
+        ul.li_hover li:hover{
+            background-color: #dacdd8;
+            cursor: hand;
+            border-radius: 37px;
+            font-size: 25px;
+        }
+        ul.li_hover li:hover:nth-child(8){
+            cursor: hand;
+            width: 25px;
+            display: initial;
+        }
+        ul.li_hover li:hover:nth-child(9){
+            cursor: hand;
+            width: 27px;  
         }
         header>nav{
             display: table;
@@ -49,95 +69,144 @@
         }
         #main_visual{
             background-position: 50% 50%;
+            position: relative;
         }
         #main_visual_1{
-            padding-top: 100px;
-            padding-bottom: 100px;
+            padding-top: 121px;
+            padding-bottom: 121px;
             height: 660px;
             background-image: url("images/apple main image 1.jpg");
             background-size: contain;
             background-repeat: no-repeat;
-            background-color:#ffffff;
+            background-color:#f1f1f1;
             background-position: 0% 50%;
             color: #4a86b5;
         }
          #main_visual_1 div:nth-child(1){
               font-size: 22px;
               position: relative;
-              top: 714px;
-              left: 977px;
+              top: 735px;
+              left: 1027px;
          }
          #main_visual_1 div:nth-child(2){
               font-size: 22px;
               position: relative;
-              top: 687px;
-              left: 1130px;
+              top: 708px;
+              left: 1180px;
          }
          #main_visual_2{
-            padding-top: 423px;
+            width: 627px;
+            height: 627px;
             margin-top: 10px;
             background-image: url("images/apple main image 2.jpg");
             background-size: contain;
             background-repeat: no-repeat;
-            position: relative;
-            top: -870px;
-            left: 1230px;
-            opacity: 45%;
+            position: absolute;
+            top: -10px;
+            right: 0px;
+            opacity: 70%;
+         }
+         #main_visual_2:hover{
+             opacity: 90%;
+             cursor: hand;
          }
          #main_visual_3{
+            width: 627px;
+            height: 627px;
             padding-top: 423px;
             margin-top: 11px;
             background-image: url("images/apple main image 3.jpg");
             background-size: contain;
             background-repeat: no-repeat;
-            position: relative;
-            top: -867px;
-            left: 1230px;
-            opacity: 45%;
+            position: absolute;
+            top: 448px;
+            right: 0px;
+            opacity: 40%;
          }
-         #body{
+         #main_visual_3:hover{
+             opacity: 70%;
+             cursor: hand;
+         }
+        #body{
             background-size: contain;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 22px;
             float: left;
          }
-         #body>section{
-             width: 1828px;
+        #body>section{
+             width: 1920px;
              height: 405px;
-             background-color: #dacdd8;
+             margin: 15px 15px 0px 0px;
+             background-color: #6d5c81;
              float: left;
-             position: relative;
-             bottom: 854px;
          }
-         #body>section>div{
-             font-size: 75px;
+        #body>section>div{
+             font-size: 100px;
              font-weight: bold;
              letter-spacing: 2px;
              color: #ffffff;
              position: relative;
              left: 50px;
-             top: 60px;
+             top: 20px;
          }
-         #body>section>h3{
+        #ipads{
+            position: absolute;
+            width: 1150px;
+            height: 1150px;
+            top: 979px;
+            right: 65px;
+        }
+        #div_1{
+            background-color: #cfc2e0;
+            width: 630px;
+            height: 405px;
+            float: left;
+            position: relative;
+            top: 15px;
+        }
+        #div_2{
+            background-color: #cfc2e0;
+            width: 630px;
+            height: 405px;
+            float: left;
+            position: relative;
+            top: 15px;
+            left: 15px;
+        }
+        #div_3{
+            background-color: #cfc2e0;
+            width: 630px;
+            height: 405px;
+            float: left;
+            position: relative;
+            top: 15px;
+            left: 30px;
+        }
+        #body>section>h3{
              color: white;
              position: relative;
-             left: 50px;
-             top: 100px;
-             font-size: 32px;
+             left: 55px;
+             top: 80px;
+             font-size: 43px;
          }
-         #body>ul{
+        #body>ul{
             padding: 0px;
             margin: 0px;
-            position: relative;
-            bottom: 770px;
          }
-         #body>ul>li{
+        #body>ul>li{
             float: left;
             list-style: none;
             width: 25%;
+            position: relative;
+            top: 75px;
+            margin-top: 50px;
+            margin-bottom: 200px;
          }
-         #body img{
-            width: 80%;
+         #body>ul>li:hover{
+             cursor: pointer;
+         }
+        #body img{
+            width: 75%;
             display: block;
             margin: 0 auto;
         }
@@ -154,13 +223,177 @@
              line-height: 50px;
              text-align: center;
          }
+        #div_box>ul>li{
+            list-style: none;
+        }
+        #div_box>ul>li:nth-child(1){
+            position: absolute;
+            top: 1415px;
+        }
+        #div_box>ul>li:nth-child(1):hover{
+            cursor: pointer;
+        }
+        #div_box>ul>li:nth-child(2){
+            position: absolute;
+            top: 1612px;
+            left: 777px;
+        }
+        #div_box>ul>li:nth-child(2):hover{
+            cursor: pointer;
+        }
+        #div_box>ul>li:nth-child(3){
+            position: absolute;
+            top: 1680px;
+            left: 1600px;
+        }
+        #div_box>ul>li:nth-child(3):hover{
+            cursor: pointer;
+        }
+        #div_text>div:nth-child(1){
+            background-color: #a193b2;
+            border-color: white;
+            border-width: 3px;
+            border-style: solid;
+            width: 180px;
+            height: 50px;
+            font-size: 24px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            border-radius: 60px;
+            text-align: center;
+            line-height: 50px;
+            position: absolute;
+            top: 1800px;
+            left: 500px;
+            opacity: 80%;
+        }
+        #div_text>div:nth-child(1):hover{
+            cursor: pointer;
+            opacity: 100%;
+        }
+        #div_text>div:nth-child(2){
+            font-size: 80px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+            position: absolute;
+            top: 1520px;
+            left: 885px;
+            opacity: 90%;
+        }
+        #div_text>div:nth-child(2):hover{
+            cursor: pointer;
+        }
+        #div_text>div:nth-child(3){
+            font-size: 22px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            position: absolute;
+            top: 1500px;
+            left: 935px;
+            opacity: 78%;
+        }
+        #div_text>div:nth-child(4){
+            font-size: 62px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+            position: absolute;
+            top: 1520px;
+            left: 1395px;
+            opacity: 90%;
+        }
+        #div_text>div:nth-child(4):hover{
+            cursor: pointer;
+        }
+        #div_text>div:nth-child(5){
+            font-size: 19px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+            position: absolute;
+            top: 1505px;
+            left: 1398px;
+            opacity: 80%;
+        }
+        #div_text>div:nth-child(6){
+            background-color: #a193b2;
+            border-color: white;
+            border-width: 3px;
+            border-style: solid;
+            width: 180px;
+            height: 50px;
+            font-size: 24px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            border-radius: 60px;
+            text-align: center;
+            line-height: 50px;
+            position: absolute;
+            top: 1620px;
+            left: 1405px;
+            opacity: 80%;
+        }
+        #div_text>div:nth-child(6):hover{
+            cursor: pointer;
+            opacity: 100%;
+        }
         #main_text_1{
-            margin: 0;
-            font-size: 150px;
-            position: relative;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            position: absolute;
+            top: 2420px;
+            left: 200px;
+            opacity: 50%;
+        }
+        #main_text_1:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        #main_text_2{
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            position: absolute;
+            top: 2420px;
+            left: 690px;
+            opacity: 50%;
+        }
+        #main_text_2:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        #main_text_3{
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            position: absolute;
+            top: 2420px;
+            left: 1180px;
+            opacity: 50%;
+        }
+        #main_text_3:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        #main_text_4{
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            position: absolute;
+            top: 2420px;
+            left: 1760px;
+            opacity: 50%;
+        }
+        #main_text_4:hover{
+            cursor: pointer;
+            text-decoration: underline;
         }
         footer{
-            width: 1808px;
+            width: 1902px;
             height: 90px;
             background-color: #dacdd8;
             padding: 10px;
@@ -177,14 +410,44 @@
             font-family: Arial, Helvetica, sans-serif;
             border-right: solid 2px white;
         }
+        #footer_center>ul>li:hover{
+            cursor: pointer;
+        }
         #footer_center li:nth-child(5){
             border: none;
         }
         #footer_center div{
             color: white;
             position: relative;
-            top: 30px;
-            right: 583px;
+            top: 8px;
+            left: 50px;
+        }
+        #serching_box{
+            width: 145px;
+            height: 23px;
+            position: absolute;
+            top: 2597px;
+            left: 1810px;
+            opacity: 80%;
+        }
+        #footer_glass{
+            position: absolute;
+            top: 2600px;
+            left: 1970px;
+            opacity: 55%;
+        }
+        #footer_glass:hover{
+            cursor: pointer;
+            opacity: 100%;
+        }
+        #audio{
+            width: 114px;
+            height: 40px;
+            float: right;
+            position: relative;
+            bottom: 30px;
+            right: 200px;
+            opacity: 60%;
         }
         .clear{
             clear: both;
@@ -203,7 +466,7 @@
             </a>
         </div>
             <nav>
-            <ul>
+            <ul class="li_hover">
                 <li>Mac</li>
                 <li>iPad</li>
                 <li>iPhone</li>
@@ -223,8 +486,8 @@
             </header>
             <div id="main_visual">
             <div id="main_visual_1">
-                <div>Learn more></div>
-                <div>Buy></div>
+                <div id="div_hover_1">Learn more></div>
+                <div id="div_hover_2">Buy></div>
             </div>
             <div id="main_visual_2"></div>
             <div id="main_visual_3"></div>
@@ -238,25 +501,61 @@
                         Hot Devices
                     </div>
                 </section>
+                <div id="ipads">
+                    <img src="images/4_ipad.png">
+                </div>
+                <div id="div_1"></div>
+                <div id="div_2"></div>
+                <div id="div_3"></div>
                 <ul>
-            <li>
-                <img src="images/iphone xr black.png">
-            </li>
-            <li>
-                <img src="images/apple watch black.jpg">
-            </li>
-            <li>
-                <img src="images/macbook air.jpg">
-            </li>
-            <li>
-                <img src="images/ipad.png">
-            </li>
-            <div class="clear"></div>
+                    <li>
+                        <img src="images/iphone xr black.png">
+                    </li>
+                    <li>
+                        <img src="images/apple watch black.png">
+                    </li>
+                    <li>
+                        <img src="images/macbook air.png">
+                    </li>
+                    <li>
+                        <img src="images/ipad.png">
+                    </li>
+                    <div class="clear"></div>
                 </ul>
-        </div>
-        <div id="main_text_1">
-            2019 Apple line up
-        </div>
+            </div>
+            <div id="div_box">
+                <ul>
+                    <li>
+                        <img src="images/div_ipad.png">
+                    </li>
+                    <li>
+                        <img src="images/AirPods Pro.png">
+                    </li>
+                    <li>
+                        <img src="images/magic mouse.png">
+                    </li>
+                </ul>
+            </div>
+            <div id=div_text>
+                <div>Learn more></div>
+                <div>AirPods</div>
+                <div>with wireless charging</div>
+                <div>MAGIC MOUSE</div>
+                <div>Perfect comfort</div>
+                <div>Learn more></div>
+            </div>
+            <div id="main_text_1">
+                iPhone XR
+            </div>
+            <div id="main_text_2">
+                Apple Watch
+            </div>
+            <div id="main_text_3">
+                MacBook Pro
+            </div>
+            <div id="main_text_4">
+                iPad Pro
+            </div>
             <footer>
                 <div id="footer_center">
                     <ul>
@@ -266,6 +565,7 @@
                         <li>Legal</li>
                         <li>Site Map</li>
                     </ul>
+                    <br>
                     <div>
                         Copyright © 2019 Apple Inc. All rights reserved.
                     </div>
@@ -273,6 +573,16 @@
                         More ways to shop: Find an Apple Store or other retailer near you. Or call 1-800-MY-APPLE.
                     </div>
                 </div>
+                <p>
+                    <label for="serching_box" class="serching_box"></label>
+                    <textarea id="serching_box"></textarea>
+                </p>
+                <div id="footer_glass">
+                    <img src="images/apple_glass.png">
+                </div>
+                <audio autoplay controls id="audio">
+                    <source src="audio/New User.mp3" type="audio/mp3">
+                </audio>
             </footer>
     </div>
     </body>
