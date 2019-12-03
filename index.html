@@ -5,18 +5,448 @@
         <meta charset="utf-8"/>
         <meta name="author" content="정의성" />
         <style>
+        #wrap{
+            margin: 0px 0px 90px 90px;
+            min-width: 1200px;
+            max-width: 1920px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 4px;
+            background-color: #f1f1f1;
+        }
+        body{
+            background-color: #f1f1f1;
+        }
+
+
+        /* header */
+
+
+        header{
+            background-color: #f1f1f1;
+            color: black;
+            padding: 14px 0px 45px;
+            padding-top: 35px;
+        }
+        #apple_logo{
+            opacity: 80%;
+            position: relative;
+            top: 8px;
+            left: 10px;
+        }
+
+        /* navigation */
+
         
+        nav>ul>li{
+            float: left;
+            list-style: none;
+            padding-left: 32px;
+            padding-right: 32px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 21px;
+            opacity: 80%;
+            position: relative;
+            left: 20px;
+            opacity: 70%;
+        }
+        nav>ul>li>a{
+            text-decoration: none;
+            color: black;
+        }
+        nav>ul>li>div{
+            display: none;
+            position: absolute;
+            font-size: 25px;
+            width: 400px;
+        }
+        nav>ul>li:hover>div{
+            display: block;
+            cursor: pointer;
+            line-height: 39px;
+            padding-top: 5px;
+        }
+        nav>ul>li>div>div{
+            opacity: 50%;
+            display: inline-block;
+        }
+        nav>ul>li>div>div:hover{
+            background-color: #dacdd8;
+            background-color: #dacdd888;
+            cursor: hand;
+            border-radius: 37px;
+            font-size: 35px;
+            opacity: 90%;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        ul.li_hover li:hover{
+            background-color: #dacdd8;
+            cursor: hand;
+            border-radius: 37px;
+            font-size: 25px;
+            opacity: 100%;
+        }
+        ul.li_hover li:hover:nth-child(8){
+            cursor: hand;
+            width: 25px;
+            display: initial;
+        }
+        ul.li_hover li:hover:nth-child(9){
+            cursor: hand;
+            width: 27px;  
+        }
+        header>nav{
+            display: table;
+            float: right;
+            position: relative;
+            top: -28px;
+            position: relative;
+            z-index: 1000;
+        }
+        header>nav>ul{
+            margin: 5px;
+        }
+        #apple_bag{
+            position: relative;
+            bottom: 6px;
+        }
+
+
+        /* 로그인 창 */
+
+
+        h2{
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            opacity: 65%;
+            padding-top: 90px;
+        }
+        .box{
+			background-color: #e5dce4;
+			width: 573px;
+			padding: 10px;
+			font-size: 22px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0 auto;
+		}
+		input, select, textarea, button{
+			font-size: 22px;
+            font-family: Arial, Helvetica, sans-serif;
+		}
+		.box label{
+			color: gray;
+			width: 130px;
+			display: inline-block;
+		}
+        input[type="text"],
+		input[type="password"],
+		select{
+			width: 200px;
+			height: 36px;
+			box-sizing: border-box;
+			vertical-align: top;
+		}
+		input[type="button"],
+		button{
+			background-color: #c5b0c1;
+			color: #fff;
+			height: 35px;
+		}
+		.box button{
+			width: 130px;
+            height: 35px;
+		}
+        select{
+            float: right;
+            position: relative;
+            top: 5px;
+            right: 2px;
+            opacity: 80%;
+        }
+        #index{
+            /* 그 외 사이트 */
+            padding-top: 100px;
+        }
+
+        /* footer */
+        
+        footer{
+            width: 1902px;
+            height: 90px;
+            background-color: #dacdd8;
+            padding: 10px;
+            margin-top: 10px;
+            float: left;
+            position: relative;
+            top: 100px;
+            }
+        #footer_center>ul>li{
+            color: white;
+            font-size: 16px;
+            list-style: none;
+            float: left;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-right: solid 2px white;
+        }
+        #footer_center>ul>li>a{
+            text-decoration: none;
+            color: white;
+        }
+        #footer_center>ul>li:hover{
+            cursor: pointer;
+        }
+        #footer_center li:nth-child(10){
+            border: none;
+        }
+        #footer_center div{
+            color: white;
+            position: relative;
+            top: 8px;
+            left: 50px;
+        }
+        #serching_box{
+            width: 145px;
+            height: 23px;
+            position: absolute;
+            left: 1730px;
+            opacity: 80%;
+            bottom: 1px;
+        }
+        #footer_glass{
+            position: absolute;
+            bottom: 1px;
+            left: 1890px;
+            opacity: 55%;
+        }
+        #footer_glass:hover{
+            cursor: pointer;
+            opacity: 100%;
+        }
+        #audio{
+            width: 120px;
+            height: 40px;
+            float: right;
+            position: relative;
+            bottom: 30px;
+            right: 200px;
+            opacity: 60%;
+            position: relative;
+            bottom: 71px;
+            left: 1px;
+        }
         </style>
     </head>
+
     <body>
-        <a href="training.html">HTML연습</a>
-        <a href="html_part1.html">HTML_part1</a>
-        <a href="html5.html">HTML5</a>
-        <a href="css.html">css</a>
-        <a href="layout1.html">layout1</a>
-        <a href="layout2.html">layout2</a>
-        <a href="layout3.html">layout3</a>
-        <a href="Masonry/masonry.html">masonry</a>
-        <a href="responsive.html">responsive</a>
+        <div id="wrap">
+        <header>
+        <div id="apple_logo">
+            <a href="free_layout.html">
+                <img src="images/apple.png" alt="apple logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="li_hover">
+                <li><a href="layout1.html">Mac</a>
+                    <div>
+                        <div>MacBook Air</div><br/>
+                        <div>MacBook Pro 13"</div><br/>
+                        <div>MacBook Pro 16"</div><br/>
+                        <div>iMac</div><br/>
+                        <div>iMac Pro</div><br/>
+                        <div>Mac Pro</div><br/>
+                        <div>Mac mini</div><br/>
+                        <div>Compare</div><br/>
+                        <div>Pro Display XDR</div><br/>
+                        <div>Accessories</div><br/>
+                        <div>Catalina</div><br/>
+                    </div>
+                </li>
+                <li><a href="layout2.html">iPad</a>
+                    <div>
+                        <div>iPad Pro</div><br/>
+                        <div>iPad Air</div><br/>
+                        <div>iPad</div><br/>
+                        <div>iPad mini</div><br/>
+                        <div>Compare</div><br/>
+                        <div>Apple Pencil</div><br/>
+                        <div>Smart Keyboard</div><br/>
+                        <div>AirPods</div><br/>
+                        <div>Accessories</div><br/>
+                        <div>iPadOs</div><br/>
+                    </div>
+                </li>
+                <li><a href="layout3.html">iPhone</a>
+                    <div>
+                        <div>iPhone 11 Pro</div><br/>
+                        <div>iPhone 11</div><br/>
+                        <div>iPhone XR</div><br/>
+                        <div>iPhone 8</div><br/>
+                        <div>Compare</div><br/>
+                        <div>Apple Card</div><br/>
+                        <div>AirPods</div><br/>
+                        <div>Accessories</div><br/>
+                        <div>iOS 13</div><br/>
+                    </div>
+                </li>
+                <li><a href="index.html">Watch</a>
+                    <div>
+                        <div>Apple Watch Series 5</div><br/>
+                        <div>Apple Watch Nike</div><br/>
+                        <div>Apple Watch Hermes</div><br/>
+                        <div>Apple Watch Edition</div><br/>
+                        <div>Apple Watch Series 3</div><br/>
+                        <div>Compare</div><br/>
+                        <div>Bands</div><br/>
+                        <div>Airpods</div><br/>
+                        <div>Accessories</div><br/>
+                        <div>watchOS</div><br/>
+                    </div>
+                </li>
+                <li><a href="index.html">TV</a>
+                    <div>
+                        <div>Apple TV app</div><br/>
+                        <div>Apple TV+</div><br/>
+                        <div>Apple TV 4K</div><br/>
+                        <div>Apple TV HD</div><br/>
+                        <div>AirPlay</div><br/>
+                        <div>Accessories</div><br/>
+                    </div>
+                </li>
+                <li><a href="index.html">Music</a>
+                    <div>
+                        <div>Apple Music</div><br/>
+                        <div>AirPods Pro</div><br/>
+                        <div>AirPods</div><br/>
+                        <div>HomePod</div><br/>
+                        <div>iPod touch</div><br/>
+                        <div>Music Accessories</div><br/>
+                        <div>Gift Cards</div><br/>
+                    </div>
+                </li>
+                <li><a href="index.html">Support</a></li>
+                <li>
+                    <a href="index.html"><img src="images/apple_glass.png" alt="apple glass"></a>
+                </li>
+                <li id="apple_bag">
+                    <img src="images/apple_bag.png" usemap="#Map" alt="apple bag">
+                    <map name="Map">
+                        <area shape="rect" coords="0,0,50,50" href="index.html">
+                    </map>
+                </li>
+                <div class="clear"></div>
+                </ul>
+            </nav>
+        </header>
+
+
+        <!-- 로그인 창 -->
+
+
+        <form action="">
+            <h2>Create your Apple account</h2>
+            <div class="box">
+                <p>
+                    <label for="uid">Username</label>
+                    <input type="text" id="uid" placeholder="username">
+                    <input type="button" value="Duplicate check">
+                </p>
+                <p>
+                    <label for="pw">password</label>
+                    <input type="password" id="pw">
+                </p>
+                <p>
+                    <label for="pw2">confirm password</label>
+                    <input type="password" id="pw2">
+                </p>
+                <p>
+                    <label for="emailAccount">Email</label>
+                    <input type="text" id="emailAccount">
+                    @
+                    <input type="text" id="emailDomain" placeholder="select" disabled>
+                    <select>
+                        <option>select</option>
+                        <option>naver.com</option>
+                        <option>daum.net</option>
+                        <option>gmail.com</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="pw">First name</label>
+                    <input type="password" id="pw">
+                </p>
+                <p>
+                    <label for="pw">Last name</label>
+                    <input type="password" id="pw">
+                </p>
+                <p>
+                    <label></label>
+                    <button>cancel</button>
+                    <button>next</button>
+                </p>
+            </div>
+        </form>
+        <div id="index">
+        </div>
+        <footer>
+            <div id="footer_center">
+                <ul>
+                    <li>
+                        <a href="training.html">HTML연습</a>
+                    </li>
+                    <li>
+                        <a href="html_part1.html">HTML_part1</a>
+                    </li>
+                    <li>
+                        <a href="html5.html">HTML5</a>
+                    </li>
+                    <li>
+                        <a href="css.html">css</a>
+                    </li>
+                    <li>
+                        <a href="layout1.html">layout1</a>
+                    </li>
+                    <li>
+                        <a href="layout2.html">layout2</a>
+                    </li>
+                    <li>
+                        <a href="layout3.html">layout3</a>
+                    </li>
+                    <li>
+                        <a href="Masonry/masonry.html">masonry</a>
+                    </li>
+                    <li>
+                        <a href="responsive.html">responsive</a>
+                    </li>
+                    <li>
+                        <a href="free_layout.html">free_layout</a>
+                    </li>
+                </ul>
+                <br>
+                <div>
+                    Copyright © 2019 Apple Inc. All rights reserved.
+                </div>
+                <div>
+                    More ways to shop: Find an Apple Store or other retailer near you. Or call 1-800-MY-APPLE.
+                </div>
+            </div>
+            <p>
+                <label for="serching_box" class="serching_box"></label>
+                <textarea id="serching_box"></textarea>
+            </p>
+            <div id="footer_glass">
+                <img src="images/apple_glass.png" alt="apple glass">
+            </div>
+            <audio autoplay controls id="audio">
+                <source src="audio/New User.mp3" type="audio/mp3">
+            </audio>
+        </footer>
+        </div>
     </body>
 </html>

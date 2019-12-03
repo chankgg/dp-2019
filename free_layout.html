@@ -13,9 +13,18 @@
             padding-left: 4px;
             background-color: #f1f1f1;
         }
+        #index{
+            color: #f1f1f1;
+            text-decoration: none;
+        }
         body{
             background-color: #f1f1f1;
         }
+
+
+        /* header */
+
+
         header{
             background-color: #f1f1f1;
             color: black;
@@ -27,6 +36,11 @@
             top: 8px;
             left: 10px;
         }
+
+
+        /* navigation */
+
+        
         nav>ul>li{
             float: left;
             list-style: none;
@@ -39,11 +53,44 @@
             left: 20px;
             opacity: 70%;
         }
+        nav>ul>li>a{
+            text-decoration: none;
+            color: black;
+        }
+        nav>ul>li>div{
+            display: none;
+            position: absolute;
+            font-size: 25px;
+            width: 400px;
+        }
+        nav>ul>li:hover>div{
+            display: block;
+            cursor: pointer;
+            line-height: 39px;
+            padding-top: 11px;
+        }
+        nav>ul>li>div>div{
+            opacity: 35%;
+            display: inline-block;
+        }
+        nav>ul>li>div>div:hover{
+            background-color: #dacdd8;
+            background-color: #dacdd888;
+            cursor: hand;
+            border-radius: 37px;
+            font-size: 35px;
+            opacity: 90%;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
         ul.li_hover li:hover{
             background-color: #dacdd8;
             cursor: hand;
             border-radius: 37px;
             font-size: 25px;
+            opacity: 100%;
         }
         ul.li_hover li:hover:nth-child(8){
             cursor: hand;
@@ -59,6 +106,8 @@
             float: right;
             position: relative;
             top: -28px;
+            position: relative;
+            z-index: 1000;
         }
         header>nav>ul{
             margin: 5px;
@@ -67,6 +116,11 @@
             position: relative;
             bottom: 6px;
         }
+
+
+        /* main visual */
+
+
         #main_visual{
             background-position: 50% 50%;
             position: relative;
@@ -81,20 +135,22 @@
             background-color:#f1f1f1;
             background-position: 0% 50%;
             color: #4a86b5;
+            position: relative;
+            z-index: 0;
         }
-         #main_visual_1 div:nth-child(1){
+        #main_visual_1 div:nth-child(1){
               font-size: 22px;
               position: relative;
               top: 735px;
               left: 1027px;
-         }
-         #main_visual_1 div:nth-child(2){
+        }
+        #main_visual_1 div:nth-child(2){
               font-size: 22px;
               position: relative;
               top: 708px;
               left: 1180px;
-         }
-         #main_visual_2{
+        }
+        #main_visual_2{
             width: 627px;
             height: 627px;
             margin-top: 10px;
@@ -105,12 +161,12 @@
             top: -10px;
             right: 0px;
             opacity: 70%;
-         }
-         #main_visual_2:hover{
+        }
+        #main_visual_2:hover{
              opacity: 90%;
              cursor: hand;
-         }
-         #main_visual_3{
+        }
+        #main_visual_3{
             width: 627px;
             height: 627px;
             padding-top: 423px;
@@ -122,24 +178,29 @@
             top: 448px;
             right: 0px;
             opacity: 40%;
-         }
-         #main_visual_3:hover{
+        }
+        #main_visual_3:hover{
              opacity: 70%;
              cursor: hand;
-         }
+        }
+
+
+        /* body */
+         
+
         #body{
             background-size: contain;
             font-family: Arial, Helvetica, sans-serif;
             font-size: 22px;
             float: left;
-         }
+        }
         #body>section{
              width: 1920px;
              height: 405px;
              margin: 15px 15px 0px 0px;
              background-color: #6d5c81;
              float: left;
-         }
+        }
         #body>section>div{
              font-size: 100px;
              font-weight: bold;
@@ -148,7 +209,7 @@
              position: relative;
              left: 50px;
              top: 20px;
-         }
+        }
         #ipads{
             position: absolute;
             width: 1150px;
@@ -188,11 +249,11 @@
              left: 55px;
              top: 80px;
              font-size: 43px;
-         }
+        }
         #body>ul{
             padding: 0px;
             margin: 0px;
-         }
+        }
         #body>ul>li{
             float: left;
             list-style: none;
@@ -201,10 +262,10 @@
             top: 75px;
             margin-top: 50px;
             margin-bottom: 200px;
-         }
-         #body>ul>li:hover{
+        }
+        #body>ul>li:hover{
              cursor: pointer;
-         }
+        }
         #body img{
             width: 75%;
             display: block;
@@ -222,7 +283,7 @@
              font-size: 25px;
              line-height: 50px;
              text-align: center;
-         }
+        }
         #div_box>ul>li{
             list-style: none;
         }
@@ -349,6 +410,10 @@
             left: 200px;
             opacity: 50%;
         }
+        #main_text_1>a{
+            color: black;
+            text-decoration: none;
+        }
         #main_text_1:hover{
             cursor: pointer;
             text-decoration: underline;
@@ -361,6 +426,10 @@
             top: 2420px;
             left: 690px;
             opacity: 50%;
+        }
+        #main_text_2>a{
+            color: black;
+            text-decoration: none;
         }
         #main_text_2:hover{
             cursor: pointer;
@@ -375,6 +444,10 @@
             left: 1180px;
             opacity: 50%;
         }
+        #main_text_3>a{
+            color: black;
+            text-decoration: none;
+        }
         #main_text_3:hover{
             cursor: pointer;
             text-decoration: underline;
@@ -388,10 +461,19 @@
             left: 1760px;
             opacity: 50%;
         }
+        #main_text_4>a{
+            color: black;
+            text-decoration: none;
+        }
         #main_text_4:hover{
             cursor: pointer;
             text-decoration: underline;
         }
+
+
+        /* footer */
+
+
         footer{
             width: 1902px;
             height: 90px;
@@ -399,10 +481,10 @@
             padding: 10px;
             margin-top: 10px;
             float: left;
-            }
-        #footer_center>ul>li{
+        }
+        #footer_left>ul>li{
             color: white;
-            font-size: 18px;
+            font-size: 16px;
             list-style: none;
             float: left;
             padding-left: 10px;
@@ -410,13 +492,17 @@
             font-family: Arial, Helvetica, sans-serif;
             border-right: solid 2px white;
         }
-        #footer_center>ul>li:hover{
+        #footer_left>ul>li>a{
+            text-decoration: none;
+            color: white;
+        }
+        #footer_left>ul>li:hover{
             cursor: pointer;
         }
-        #footer_center li:nth-child(5){
+        #footer_left li:nth-child(10){
             border: none;
         }
-        #footer_center div{
+        #footer_left div{
             color: white;
             position: relative;
             top: 8px;
@@ -441,14 +527,22 @@
             opacity: 100%;
         }
         #audio{
-            width: 114px;
+            width: 120px;
             height: 40px;
             float: right;
             position: relative;
             bottom: 30px;
             right: 200px;
             opacity: 60%;
+            position: relative;
+            bottom: 71px;
+            left: 1px;
         }
+
+
+        /* eles */
+
+
         .clear{
             clear: both;
             height: 0px;
@@ -456,134 +550,252 @@
         }
         </style>
     </head>
+
     <body>
-        <a href="index.html">index</a>
+        <a id="index" href="index.html">index</a>
         <div id=wrap>
         <header>
-            <div id="apple_logo">
-            <a href="index.html">
-                <img src="images/apple.png">
+        <div id="apple_logo">
+            <a href="free_layout.html">
+                <img src="images/apple.png" alt="apple logo">
             </a>
         </div>
-            <nav>
-            <ul class="li_hover">
-                <li>Mac</li>
-                <li>iPad</li>
-                <li>iPhone</li>
-                <li>Watch</li>
-                <li>TV</li>
-                <li>Music</li>
-                <li>Support</li>
+        <nav>
+        <ul class="li_hover">
+            <li><a href="layout1.html">Mac</a>
+                <div>
+                    <div>MacBook Air</div><br/>
+                    <div>MacBook Pro 13"</div><br/>
+                    <div>MacBook Pro 16"</div><br/>
+                    <div>iMac</div><br/>
+                    <div>iMac Pro</div><br/>
+                    <div>Mac Pro</div><br/>
+                    <div>Mac mini</div><br/>
+                    <div>Compare</div><br/>
+                    <div>Pro Display XDR</div><br/>
+                    <div>Accessories</div><br/>
+                    <div>Catalina</div><br/>
+                </div>
+            </li>
+            <li><a href="layout2.html">iPad</a>
+                <div>
+                    <div>iPad Pro</div><br/>
+                    <div>iPad Air</div><br/>
+                    <div>iPad</div><br/>
+                    <div>iPad mini</div><br/>
+                    <div>Compare</div><br/>
+                    <div>Apple Pencil</div><br/>
+                    <div>Smart Keyboard</div><br/>
+                    <div>AirPods</div><br/>
+                    <div>Accessories</div><br/>
+                    <div>iPadOs</div><br/>
+                </div>
+            </li>
+            <li><a href="layout3.html">iPhone</a>
+                <div>
+                    <div>iPhone 11 Pro</div><br/>
+                    <div>iPhone 11</div><br/>
+                    <div>iPhone XR</div><br/>
+                    <div>iPhone 8</div><br/>
+                    <div>Compare</div><br/>
+                    <div>Apple Card</div><br/>
+                    <div>AirPods</div><br/>
+                    <div>Accessories</div><br/>
+                    <div>iOS 13</div><br/>
+                </div>
+            </li>
+            <li><a href="index.html">Watch</a>
+                <div>
+                    <div>Apple Watch Series 5</div><br/>
+                    <div>Apple Watch Nike</div><br/>
+                    <div>Apple Watch Hermes</div><br/>
+                    <div>Apple Watch Edition</div><br/>
+                    <div>Apple Watch Series 3</div><br/>
+                    <div>Compare</div><br/>
+                    <div>Bands</div><br/>
+                    <div>Airpods</div><br/>
+                    <div>Accessories</div><br/>
+                    <div>watchOS</div><br/>
+                </div>
+            </li>
+            <li><a href="index.html">TV</a>
+                <div>
+                    <div>Apple TV app</div><br/>
+                    <div>Apple TV+</div><br/>
+                    <div>Apple TV 4K</div><br/>
+                    <div>Apple TV HD</div><br/>
+                    <div>AirPlay</div><br/>
+                    <div>Accessories</div><br/>
+                </div>
+            </li>
+            <li><a href="index.html">Music</a>
+                <div>
+                    <div>Apple Music</div><br/>
+                    <div>AirPods Pro</div><br/>
+                    <div>AirPods</div><br/>
+                    <div>HomePod</div><br/>
+                    <div>iPod touch</div><br/>
+                    <div>Music Accessories</div><br/>
+                    <div>Gift Cards</div><br/>
+                </div>
+            </li>
+            <li><a href="index.html">Support</a></li>
+            <li>
+                <a href="index.html"><img src="images/apple_glass.png" alt="apple glass"></a>
+            </li>
+            <li id="apple_bag">
+                <img src="images/apple_bag.png" usemap="#Map" alt="apple bag">
+                <map name="Map">
+                    <area shape="rect" coords="0,0,50,50" href="index.html">
+                </map>
+            </li>
+            <div class="clear"></div>
+            </ul>
+        </nav>
+        </header>
+
+        <div id="main_visual">
+        <div id="main_visual_1">
+            <div id="div_hover_1">Learn more></div>
+            <div id="div_hover_2">Buy></div>
+        </div>
+        <div id="main_visual_2"></div>
+        <div id="main_visual_3"></div>
+        </div>
+
+        <div id="body">
+            <section>
+                <h3>
+                    2019
+                </h3>
+                <div>
+                    Hot Devices
+                </div>
+            </section>
+            
+            <div id="ipads">
+                <img src="images/4_ipad.png" alt="ipad">
+            </div>
+            <div id="div_1"></div>
+            <div id="div_2"></div>
+            <div id="div_3"></div>
+            <ul>
                 <li>
-                    <img src="images/apple_glass.png">
+                    <a href="index.html">
+                        <img src="images/iphone xr black.png" alt="iphone xr black">
+                    </a>
                 </li>
-                <li id="apple_bag">
-                    <img src="images/apple_bag.png">
+                <li>
+                    <a href="index.html">
+                        <img src="images/apple watch black.png" alt="apple watch black">
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <img src="images/macbook air.png" alt="macbook air">
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <img src="images/ipad.png" alt="ipad pro">
+                    </a>
                 </li>
                 <div class="clear"></div>
-                </ul>
-            </nav>
-            </header>
-            <div id="main_visual">
-            <div id="main_visual_1">
-                <div id="div_hover_1">Learn more></div>
-                <div id="div_hover_2">Buy></div>
-            </div>
-            <div id="main_visual_2"></div>
-            <div id="main_visual_3"></div>
-            </div>
-            <div id="body">
-                <section>
-                    <h3>
-                        2019
-                    </h3>
-                    <div>
-                        Hot Devices
-                    </div>
-                </section>
-                <div id="ipads">
-                    <img src="images/4_ipad.png">
-                </div>
-                <div id="div_1"></div>
-                <div id="div_2"></div>
-                <div id="div_3"></div>
+            </ul>
+        </div>
+
+        <div id="div_box">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="images/div_ipad.png" alt="ipad"></a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <img src="images/AirPods Pro.png" alt="airpods pro"></a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <img src="images/magic mouse.png" alt="magic mouse"></a>
+                </li>
+            </ul>
+        </div>
+
+        <div id=div_text>
+            <div>Learn more></div>
+            <div>AirPods</div>
+            <div>with wireless charging</div>
+            <div>MAGIC MOUSE</div>
+            <div>Perfect comfort</div>
+            <div>Learn more></div>
+        </div>
+
+        <div id="main_text_1">
+            <a href="index.html">iPhone XR</a>
+        </div>
+        <div id="main_text_2">
+            <a href="index.html">Apple Watch</a>
+        </div>
+        <div id="main_text_3">
+            <a href="index.html">MacBook Pro</a>
+        </div>
+        <div id="main_text_4">
+            <a href="index.html">iPad Pro</a>
+        </div>
+
+        <footer>
+            <div id="footer_left">
                 <ul>
                     <li>
-                        <img src="images/iphone xr black.png">
+                        <a href="training.html">HTML연습</a>
                     </li>
                     <li>
-                        <img src="images/apple watch black.png">
+                        <a href="html_part1.html">HTML_part1</a>
                     </li>
                     <li>
-                        <img src="images/macbook air.png">
+                        <a href="html5.html">HTML5</a>
                     </li>
                     <li>
-                        <img src="images/ipad.png">
+                        <a href="css.html">css</a>
                     </li>
-                    <div class="clear"></div>
+                    <li>
+                        <a href="layout1.html">layout1</a>
+                    </li>
+                    <li>
+                        <a href="layout2.html">layout2</a>
+                    </li>
+                    <li>
+                        <a href="layout3.html">layout3</a>
+                    </li>
+                    <li>
+                        <a href="Masonry/masonry.html">masonry</a>
+                    </li>
+                    <li>
+                        <a href="responsive.html">responsive</a>
+                    </li>
+                    <li>
+                        <a href="free_layout.html">free_layout</a>
+                    </li>
                 </ul>
-            </div>
-            <div id="div_box">
-                <ul>
-                    <li>
-                        <img src="images/div_ipad.png">
-                    </li>
-                    <li>
-                        <img src="images/AirPods Pro.png">
-                    </li>
-                    <li>
-                        <img src="images/magic mouse.png">
-                    </li>
-                </ul>
-            </div>
-            <div id=div_text>
-                <div>Learn more></div>
-                <div>AirPods</div>
-                <div>with wireless charging</div>
-                <div>MAGIC MOUSE</div>
-                <div>Perfect comfort</div>
-                <div>Learn more></div>
-            </div>
-            <div id="main_text_1">
-                iPhone XR
-            </div>
-            <div id="main_text_2">
-                Apple Watch
-            </div>
-            <div id="main_text_3">
-                MacBook Pro
-            </div>
-            <div id="main_text_4">
-                iPad Pro
-            </div>
-            <footer>
-                <div id="footer_center">
-                    <ul>
-                        <li>Privacy Policy</li>
-                        <li>Terms of Use</li>
-                        <li>Sales and Refunds</li>
-                        <li>Legal</li>
-                        <li>Site Map</li>
-                    </ul>
-                    <br>
-                    <div>
-                        Copyright © 2019 Apple Inc. All rights reserved.
-                    </div>
-                    <div>
-                        More ways to shop: Find an Apple Store or other retailer near you. Or call 1-800-MY-APPLE.
-                    </div>
+                <br>
+                <div>
+                    Copyright © 2019 Apple Inc. All rights reserved.
                 </div>
-                <p>
-                    <label for="serching_box" class="serching_box"></label>
-                    <textarea id="serching_box"></textarea>
-                </p>
-                <div id="footer_glass">
-                    <img src="images/apple_glass.png">
+                <div>
+                    More ways to shop: Find an Apple Store or other retailer near you. Or call 1-800-MY-APPLE.
                 </div>
-                <audio autoplay controls id="audio">
-                    <source src="audio/New User.mp3" type="audio/mp3">
-                </audio>
-            </footer>
+            </div>
+            <p>
+                <label for="serching_box" class="serching_box"></label>
+                <textarea id="serching_box"></textarea>
+            </p>
+            <div id="footer_glass">
+                <img src="images/apple_glass.png" alt="apple glass">
+            </div>
+            <audio autoplay controls id="audio">
+                <source src="audio/New User.mp3" type="audio/mp3">
+            </audio>
+        </footer>
     </div>
     </body>
 </html>
